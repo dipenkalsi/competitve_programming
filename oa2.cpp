@@ -10,12 +10,14 @@ bool checkSubsequence(string s1, string s2){
     }
     return i == n;
 }
+
 bool check(int ind, string a, string b){
     if(checkSubsequence(b, a)) return true;
     if(a[ind]=='z') a[ind] == 'a';
     else a[ind]++;
     return check(ind+1, a, b);
 }
+
 vector<string> solve(vector<string>& v1, vector<string>& v2){
     vector<string> ans;
     for(int i=0; i<v1.size(); i++){
@@ -23,6 +25,7 @@ vector<string> solve(vector<string>& v1, vector<string>& v2){
         else ans.push_back("NO");
     }
 }
+
 int main(){
     int m, n;
     cin>>m;

@@ -20,7 +20,9 @@ int main(){
         ans.push_back(v[v.size()-1]);
         ans.push_back(v[v.size()-1]);
         v.pop_back();
-        
+        map<int, int> mpp;
+        for(int i=0; i<v.size(); i++) mpp[v[i]]++;
+        for()
     }
     return 0;
 }
